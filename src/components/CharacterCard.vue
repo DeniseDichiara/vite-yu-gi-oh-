@@ -1,7 +1,7 @@
 <template>
     <article class="card mb-3 col-2 me-3">
         <img src="https://images.ygoprodeck.com/images/cards/34541863.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body color">
             <h5 class="card-title">
                 {{ name }}
             </h5>
@@ -29,4 +29,8 @@ export default {
 </script>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+    .color{
+        background-color:  #d48f38;
+    }
+</style>
