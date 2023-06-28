@@ -1,6 +1,5 @@
 <template>
     <main>
-
         <CharacterList />
     </main>
 </template>
