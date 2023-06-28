@@ -8,7 +8,7 @@
                             <a class="navbar-brand" href="#">
                                 <img src="../assets/yo.jpg" alt="Logo" class="d-inline-block align-text-top me-5 yo">
                             </a>
-                            <h4 class="text-capitalize lh-lg fs-2">
+                            <h4 class="text-capitalize lh-lg fs-2 fw-semibold">
                                 yu-gi-oh api
                             </h4>
                         </div>
@@ -22,14 +22,15 @@
 
 <script>
 export default {
-    name:'AppHeader',
+    name: 'AppHeader',
 }
 </script>
 
 
 <style lang="scss">
-    .yo {
+.yo {
     width: 80px;
     height: 20px;
+    margin-top: 12px;
 }
 </style>
