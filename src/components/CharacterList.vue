@@ -1,11 +1,8 @@
 <template>
     <div class="container">
-        <div class="row p-5 justify-content-evenly">
-            <CharacterCard v-for="character in charactersList"
-                :characterImage="character.image"
-                :characterName="character.name"
-                :characterArchetype="character.archetype"
-            />
+        <div class="row p-5 justify-content-evenly cornice">
+            <CharacterCard v-for="character in charactersList" :characterImage="character.image"
+                :characterName="character.name" :characterArchetype="character.archetype" />
         </div>
     </div>
 </template>
@@ -18,16 +15,16 @@ export default {
     name: 'CharacterList',
     data() {
         return {
-            charactersList : [],
+            charactersList: [],
         }
     },
     components: {
         CharacterCard
     },
 
-    created(){
+    created() {
         axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
-            .then( (response) => {
+            .then((response) => {
                 console.log(response.data.data);
                 this.charactersList = response.data.data;
             })
@@ -39,4 +36,8 @@ export default {
 </script>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+    .cornice {
+        background-color: white;
+    }
+</style>

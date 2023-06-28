@@ -1,6 +1,14 @@
 <template>
     <main>
-        <CharacterList />
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <CharacterList />
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </template>
 
@@ -18,4 +26,8 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+
+</style>
 
