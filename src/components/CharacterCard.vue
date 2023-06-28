@@ -6,7 +6,7 @@
                 {{ name }}
             </h5>
             <p class="card-text">
-                Alien
+                {{ archetype }}
             </p>
         </div>
     </article>

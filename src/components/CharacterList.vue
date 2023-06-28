@@ -1,8 +1,10 @@
 <template>
     <div class="container">
         <div class="row p-5 justify-content-evenly cornice">
-            <CharacterCard v-for="character in charactersList" :characterImage="character.image"
-                :characterName="character.name" :characterArchetype="character.archetype" />
+            <CharacterCard v-for="character in charactersList" 
+                :characterImage="character.image"
+                :characterName="character.name" 
+                :characterArchetype="character.archetype" />
         </div>
     </div>
 </template>
@@ -37,7 +39,7 @@ export default {
 
 
 <style lang="scss">
-    .cornice {
-        background-color: white;
-    }
+.cornice {
+    background-color: white;
+}
 </style>
