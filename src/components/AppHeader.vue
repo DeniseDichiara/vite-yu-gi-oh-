@@ -27,6 +27,9 @@ export default {
 </script>
 
 
-<style lang="">
-    
+<style lang="scss">
+    .yo {
+    width: 80px;
+    height: 20px;
+}
 </style>
